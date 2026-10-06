@@ -1,0 +1,18 @@
+# Instalar extensão
+
+### Raiz do projeto
+GET http://localhost:5046/ HTTP/1.1
+
+### listar produtos
+GET http://localhost:5046/api/produto/buscar/Teclado HTTP/1.1
+
+### cadastrar produtos
+POST http://localhost:5046/api/produto/cadastrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Teclado"
+}
+
+### exlcuir produtos
+DEL http://localhost:5046/api/produto/excluir/ HTTP/1.1
